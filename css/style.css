@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Medium.woff') format('woff'),
+        url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: 1fr 220px;
+    min-height: 100vh;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-blue {
+    background-color: #1f1f56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.ul1 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.ul1 a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.ul1 li:hover>a {
+    color: #fd8300;
+}
+
+.svgs {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.svgs a {
+    display: block;
+}
+
+path {
+    transition: .3s;
+}
+
+a:hover>svg path {
+    fill: #fd8300;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto repeat(3, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 50px;
+}
+
+.tel,.gmail,.skype {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tel a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+}
+
+.skype a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+}
+
+.gmail a {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+}
+
+.signup-btn {
+    border: 2px solid #fd8300;
+    border-radius: 35px;
+    padding: 18px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.signup-btn:hover {
+    background-color: #fd8300;
+}
+
+main {
+    grid-area: main;
+    padding: 20px 50px;
+}
+
+.divider-line {
+    height: 1px;
+    background-color: #dcdce6;
+    margin: 30px 0;
+}
+
+.btn {
+    text-align: center;
+    background-image: url('../img/hata.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    margin-bottom: 23px;
+}
+
+.p1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 20px;
+}
+
+.p2 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.b1 {
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.b2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.help{
+    font-size: 30px;
+line-height: 24px;
+color: #24242b;
+font-weight: 700;
+font-family: "Roboto Slab";
+}
+
+.main-text p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.mau {
+    color: #fd8300;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.driver {
+    height: 1px;
+    background-color: #dcdce6;
+    margin: 33px 0;
+}
+
+.projects {
+    margin-top: 40px;
+}
+
+.projects-title {
+    font-size: 24px;
+line-height: 24px;
+color: #24242b;
+font-weight: 700;
+font-family: "Roboto Slab";
+margin-bottom: 23px;    
+}
+
+.projects-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card-hover :hover{
+    text-decoration: underline;
+}
+
+.project-card {
+    background: #fff;
+    transition: 0.3s;
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    display: block;
+    object-fit: contain;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin: 15px 0 10px 0;
+    color: #222;
+}
+
+.project-card p {
+    margin: 0 0 12px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+aside {
+    background-color: #fff;
+    padding: 20px;
+    width: 220px;
+}
+
+aside p {
+    padding: 14px 0;
+    background-color: #1f1f56;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ul2 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.ul2 li {
+    background-color: #e4e4ec;
+}
+
+.ul2 li a {
+    font-size: 14px;
+line-height: 24px;
+color: #25252c;
+font-family: "Arial";
+    display: block;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+.ul2 li:hover>a {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+.ulinul li {
+    background-color: #e4e4ec;
+}
+
+.ulinul a {
+    background-color: #e4e4ec;
+    text-decoration: none;
+    font-size: 14px;
+line-height: 24px;
+color: #666666;
+font-family: "Arial";
+    padding: 5px 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.ulinul li:hover>a {
+    background-color: #cecedd;
+    color: #666666;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ededf5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 30px;
+    padding: 30px 50px 0;
+}
+
+.ul3 a{
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.footer-contacts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ul3 li:hover > a{
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.footer-gray{
+    background-color: #dcdce6;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999;
+    text-align: center;
+}
