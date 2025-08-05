@@ -28,16 +28,32 @@ body {
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-areas:
-    "header header"
-    "main aside"
-    "footer footer";
-    grid-template-columns: 1fr 220px;
-    min-height: 100vh;
+        "header"
+        "main"
+        "footer";
+}
+
+body{ 
+    cursor: url('../img/cursor2.cur'), auto;
+}
+
+body a{ 
+    cursor: url('../img/cursor.cur'), auto;
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
+}
+
+.sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aic {
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -55,11 +71,8 @@ header {
 }
 
 .header-blue {
+    padding: 21px 0;
     background-color: #1f1f56;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
 }
 
 .ul1 {
@@ -73,8 +86,7 @@ header {
     letter-spacing: 2px;
     line-height: 24px;
     color: #b1b1d2;
-    text-decoration: none;
-    transition: .3s;
+    font-family: "Arial";
 }
 
 .ul1 li:hover>a {
@@ -83,6 +95,8 @@ header {
 
 .svgs {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 15px;
     list-style: none;
 }
@@ -104,10 +118,12 @@ a:hover>svg path {
     grid-template-columns: auto repeat(3, 1fr) auto;
     align-items: center;
     gap: 20px;
-    padding: 15px 50px;
+    padding: 15px 0;
 }
 
-.tel,.gmail,.skype {
+.tel,
+.gmail,
+.skype {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -119,6 +135,11 @@ a:hover>svg path {
     line-height: 24px;
     color: #25252c;
     font-weight: bold;
+    font-family: "Arial";
+}
+
+.tel-no2 {
+    padding-left: 17px;
 }
 
 .skype a {
@@ -150,11 +171,6 @@ a:hover>svg path {
 
 .signup-btn:hover {
     background-color: #fd8300;
-}
-
-main {
-    grid-area: main;
-    padding: 20px 50px;
 }
 
 .divider-line {
@@ -204,25 +220,37 @@ main {
     font-weight: bold;
 }
 
-.help{
+main {
+    display: flex;
+    gap: 28px;
+}
+
+.company {
+    margin-bottom: 28px;
     font-size: 30px;
-line-height: 24px;
-color: #24242b;
-font-weight: 700;
-font-family: "Roboto Slab";
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 .main-text p {
-    margin-bottom: 15px;
-    line-height: 1.5;
+    width: 677px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.main-text-p2 {
+    margin-bottom: 25px;
 }
 
 .mau {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
     color: #fd8300;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 15px;
 }
 
 .driver {
@@ -237,11 +265,11 @@ font-family: "Roboto Slab";
 
 .projects-title {
     font-size: 24px;
-line-height: 24px;
-color: #24242b;
-font-weight: 700;
-font-family: "Roboto Slab";
-margin-bottom: 23px;    
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 23px;
 }
 
 .projects-flex {
@@ -250,7 +278,7 @@ margin-bottom: 23px;
     gap: 20px;
 }
 
-.project-card-hover :hover{
+.project-card-hover :hover {
     text-decoration: underline;
 }
 
@@ -261,27 +289,23 @@ margin-bottom: 23px;
 
 .project-image {
     width: 100%;
-    height: 180px;
     display: block;
-    object-fit: contain;
 }
 
 .project-card h3 {
-    font-size: 20px;
-    margin: 15px 0 10px 0;
-    color: #222;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 .project-card p {
-    margin: 0 0 12px 0;
-    color: #555;
-    font-size: 16px;
-}
-
-aside {
-    background-color: #fff;
-    padding: 20px;
+    margin: 0 0 8px 0;
     width: 220px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999;
 }
 
 aside p {
@@ -304,9 +328,9 @@ aside p {
 
 .ul2 li a {
     font-size: 14px;
-line-height: 24px;
-color: #25252c;
-font-family: "Arial";
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
     display: block;
     padding: 8px 10px;
     transition: 0.3s;
@@ -321,15 +345,12 @@ font-family: "Arial";
     background-color: #e4e4ec;
 }
 
-.ulinul a {
+.UL2.ulinul a {
     background-color: #e4e4ec;
-    text-decoration: none;
     font-size: 14px;
-line-height: 24px;
-color: #666666;
-font-family: "Arial";
+    line-height: 24px;
+    color: #666666;
     padding: 5px 10px;
-    display: block;
     transition: 0.3s;
 }
 
@@ -341,17 +362,25 @@ font-family: "Arial";
 footer {
     grid-area: footer;
     background-color: #ededf5;
+}
+
+.foter {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     gap: 30px;
-    padding: 30px 50px 0;
+    padding: 30px 0 0;
 }
 
-.ul3 a{
+.ul3 a {
     font-size: 14px;
     line-height: 26px;
     color: #666666;
-    font-family: "Arial";
+    transition: .3s;
+}
+
+.ul3 li:hover>a {
+    color: #fd8300;
+    text-decoration: underline;
 }
 
 .footer-contacts {
@@ -360,18 +389,14 @@ footer {
     gap: 20px;
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.ul3 li:hover > a{
-    color: #fd8300;
-    text-decoration: underline;
-}
-
-.footer-gray{
+.footer-gray {
+    padding: 16px;
     background-color: #dcdce6;
     font-size: 13px;
     line-height: 18px;
