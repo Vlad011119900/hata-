@@ -309,6 +309,7 @@ main {
 }
 
 aside p {
+    border-radius: 3px 3px 0 0;
     padding: 14px 0;
     background-color: #1f1f56;
     color: #fff;
@@ -327,6 +328,7 @@ aside p {
 }
 
 .ul2 li a {
+    position: relative;
     font-size: 14px;
     line-height: 24px;
     color: #25252c;
@@ -334,6 +336,25 @@ aside p {
     display: block;
     padding: 8px 10px;
     transition: 0.3s;
+}
+
+.ul2 a:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #666666;
+    border-right: 2px solid #666666;
+    transform: translateY(-50%) rotate(45deg);
+    transition: 1s;
+}
+
+.ul2 li:hover > a:before{
+    border-color: #fff;
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .ul2 li:hover>a {
@@ -345,18 +366,31 @@ aside p {
     background-color: #e4e4ec;
 }
 
-.UL2.ulinul a {
+.ulinul li a {
     background-color: #e4e4ec;
     font-size: 14px;
     line-height: 24px;
     color: #666666;
-    padding: 5px 10px;
+    padding: 5px 52px 0 24px;
     transition: 0.3s;
+}
+
+.ulinul  a::before{
+    border-color: transparent;
+}
+
+.ulinul li:hover > a:before{
+    border-color: transparent;
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .ulinul li:hover>a {
     background-color: #cecedd;
     color: #666666;
+}
+
+.last-li{
+    border-radius: 0 0 3px 3px;
 }
 
 footer {
