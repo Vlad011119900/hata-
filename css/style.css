@@ -73,7 +73,7 @@ header {
 .header-blue {
     position: fixed;
     width: 100%;
-    padding: 11px 0;
+    padding: 16px 0;
     background-color: #1f1f56;
 }
 
@@ -119,11 +119,10 @@ a:hover>svg path {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 20px;
-    padding: 29px 0;
+    padding: 84px 0 29px;
 }
 
-.gmail,
-.skype {
+.skype , .gmail {
     display: flex;
     gap: 10px;
 }
@@ -142,7 +141,6 @@ a:hover>svg path {
 }
 
 .gmail {
-    margin-bottom: 12px;
     font-size: 16px;
     line-height: 1.5em;
 }
@@ -219,7 +217,6 @@ a:hover>svg path {
 
 .b2 {
     font-size: 24px;
-    line-height: 24px;
     color: #fd8300;
     font-weight: bold;
 }
@@ -264,7 +261,6 @@ main {
 
 .projects-title {
     font-size: 24px;
-    line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -282,6 +278,7 @@ main {
 }
 
 .project-card {
+    margin-bottom: 33px;
     background: #fff;
     transition: 0.3s;
 }
@@ -308,7 +305,7 @@ main {
 
 .aside{
     position: sticky;
-    top: 43px;
+    top: 53px;
 }
 
 aside p {
@@ -334,7 +331,7 @@ aside p {
 }
 
 .ul2 li a {
-    border: 1px solid #cecedd;
+    border-bottom: 1px solid #cecedd;
     position: relative;
     font-size: 14px;
     line-height: 1.7em;
