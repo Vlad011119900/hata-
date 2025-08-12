@@ -33,11 +33,11 @@ body {
         "footer";
 }
 
-body{ 
+body {
     cursor: url('../img/cursor2.cur'), auto;
 }
 
-body a{ 
+body a {
     cursor: url('../img/cursor.cur'), auto;
 }
 
@@ -71,7 +71,9 @@ header {
 }
 
 .header-blue {
-    padding: 21px 0;
+    position: fixed;
+    width: 100%;
+    padding: 11px 0;
     background-color: #1f1f56;
 }
 
@@ -84,7 +86,6 @@ header {
 .ul1 a {
     font-size: 14px;
     letter-spacing: 2px;
-    line-height: 24px;
     color: #b1b1d2;
     font-family: "Arial";
 }
@@ -115,24 +116,22 @@ a:hover>svg path {
 
 .header {
     display: grid;
-    grid-template-columns: auto repeat(3, 1fr) auto;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 20px;
-    padding: 15px 0;
+    padding: 29px 0;
 }
 
-.tel,
 .gmail,
 .skype {
     display: flex;
-    align-items: center;
     gap: 10px;
 }
 
 .tel a {
     text-decoration: none;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
@@ -142,28 +141,35 @@ a:hover>svg path {
     padding-left: 17px;
 }
 
-.skype a {
-    text-decoration: none;
+.gmail {
+    margin-bottom: 12px;
     font-size: 16px;
-    line-height: 24px;
-    color: #25252c;
+    line-height: 1.5em;
 }
 
 .gmail a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
 }
 
-.signup-btn {
-    border: 2px solid #fd8300;
-    border-radius: 35px;
-    padding: 18px 28px;
-    text-align: center;
+.skype a {
     text-decoration: none;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
+    color: #25252c;
+}
+
+.signup-btn {
+    font-size: 16px;
+    line-height: 1.5em;
+    max-width: 200px;
+    border: 2px solid #fd8300;
+    border-radius: 35px;
+    padding: 15px 8px;
+    text-align: center;
+    text-decoration: none;
     color: #25252c;
     font-weight: bold;
     transition: .4s;
@@ -185,13 +191,12 @@ a:hover>svg path {
     background-size: cover;
     background-position: center;
     padding: 60px 20px;
-    margin-bottom: 23px;
+    margin-bottom: 42px;
 }
 
 .p1 {
     font-size: 30px;
     letter-spacing: 2px;
-    line-height: 24px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
@@ -201,14 +206,13 @@ a:hover>svg path {
 
 .p2 {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #ffffff;
     margin-bottom: 20px;
 }
 
 .b1 {
     font-size: 40px;
-    line-height: 24px;
     color: #fd8300;
     font-weight: bold;
 }
@@ -228,7 +232,6 @@ main {
 .company {
     margin-bottom: 28px;
     font-size: 30px;
-    line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -237,7 +240,7 @@ main {
 .main-text p {
     width: 677px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #666666;
     font-family: "Arial";
 }
@@ -248,7 +251,7 @@ main {
 
 .mau {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     text-decoration: underline;
     color: #fd8300;
 }
@@ -257,10 +260,6 @@ main {
     height: 1px;
     background-color: #dcdce6;
     margin: 33px 0;
-}
-
-.projects {
-    margin-top: 40px;
 }
 
 .projects-title {
@@ -294,26 +293,32 @@ main {
 
 .project-card h3 {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
     font-family: "Arial";
 }
 
 .project-card p {
-    margin: 0 0 8px 0;
     width: 220px;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.3em;
     color: #9999;
 }
 
+.aside{
+    position: sticky;
+    top: 43px;
+}
+
 aside p {
+    min-width: 220px;
+    font-size: 16px;
+    line-height: 1.5em;
     border-radius: 3px 3px 0 0;
-    padding: 14px 0;
+    padding: 15px 14px;
     background-color: #1f1f56;
     color: #fff;
-    text-align: center;
     font-weight: bold;
     font-family: "Roboto Slab";
 }
@@ -329,21 +334,22 @@ aside p {
 }
 
 .ul2 li a {
+    border: 1px solid #cecedd;
     position: relative;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #25252c;
-    font-family: "Arial";
     display: block;
-    padding: 8px 10px;
+    padding: 15px 14px;
     transition: 0.3s;
 }
 
-.ul2 a:before{
+.ul2 a:before {
     content: "";
     position: absolute;
     top: 50%;
-    right: 14px;
+    left: 195px;
+    right: 12px;
     display: block;
     width: 8px;
     height: 8px;
@@ -353,14 +359,23 @@ aside p {
     transition: 1s;
 }
 
-.ul2 li:hover > a:before{
+.ul2 li:hover>a:before {
     border-color: #fff;
     transform: translateY(-50%) rotate(135deg);
 }
 
 .ul2 li:hover>a {
+    border: 1px solid #fd8300;
     background-color: #fd8300;
     color: #fff;
+}
+
+.ulinul{
+    display: none;
+}
+
+.ul2 li:hover > .ulinul{
+    display: block;
 }
 
 .ulinul li {
@@ -368,29 +383,31 @@ aside p {
 }
 
 .ulinul li a {
+    border: none;
     background-color: #e4e4ec;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #666666;
-    padding: 5px 52px 0 24px;
+    padding: 15px 30px;
     transition: 0.3s;
 }
 
-.ulinul  a::before{
+.ulinul a:before {
     border-color: transparent;
 }
 
-.ulinul li:hover > a:before{
+.ulinul li:hover>a:before {
     border-color: transparent;
     transform: translateY(-50%) rotate(135deg);
 }
 
 .ulinul li:hover>a {
+    border: none;
     background-color: #cecedd;
     color: #666666;
 }
 
-.last-li{
+.last-li {
     border-radius: 0 0 3px 3px;
 }
 
@@ -401,14 +418,14 @@ footer {
 
 .foter {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
-    padding: 30px 0 0;
+    padding: 41px 0 30px;
 }
 
 .ul3 a {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.8em;
     color: #666666;
     transition: .3s;
 }
@@ -427,14 +444,14 @@ footer {
 .column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .footer-gray {
     padding: 16px;
     background-color: #dcdce6;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.3em;
     color: #9999;
     text-align: center;
 }
