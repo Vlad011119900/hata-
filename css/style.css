@@ -46,12 +46,12 @@ body a {
     max-width: 960px;
 }
 
-.sb {
+.space_between {
     display: flex;
     justify-content: space-between;
 }
 
-.aic {
+.items_center {
     display: flex;
     align-items: center;
 }
@@ -70,27 +70,27 @@ header {
     flex-direction: column;
 }
 
-.header-blue {
+.header_blue {
     position: fixed;
     padding: 16px 0;
     width: 100%;
     background-color: #1f1f56;
 }
 
-.ul1 {
+.menu1 {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-.ul1 a {
+.menu1 a {
     color: #b1b1d2;
     font-size: 14px;
     letter-spacing: 2px;
     transition: .5s;
 }
 
-.ul1 li:hover>a {
+.menu1 li:hover>a {
     color: #fd8300;
 }
 
@@ -114,7 +114,7 @@ a:hover>svg path {
     fill: #fd8300;
 }
 
-.header {
+.headerwhigt {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
@@ -127,15 +127,15 @@ a:hover>svg path {
     gap: 10px;
 }
 
-.tel a {
+.contacts a {
     color: #25252c;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
 }
 
-.tel-no2 {
-    padding-left: 17px;
+.contacts-no2 {
+    padding-left: 20px;
 }
 
 .gmail {
@@ -180,7 +180,7 @@ a:hover>svg path {
     background-color: #dcdce6;
 }
 
-.btn {
+.offer {
     margin-bottom: 42px;
     padding: 60px 20px;
     text-align: center;
@@ -189,7 +189,7 @@ a:hover>svg path {
     background-position: center;
 }
 
-.p1 {
+.offer-p1 {
     margin-bottom: 12px;
     color: #ffffff;
     font-size: 30px;
@@ -199,19 +199,19 @@ a:hover>svg path {
     text-transform: uppercase;
 }
 
-.p2 {
+.offer-p2 {
     margin-bottom: 16px;
     color: #ffffff;
     font-size: 14px;
 }
 
-.b1 {
+.offer-b1 {
     color: #fd8300;
     font-size: 40px;
     font-weight: bold;
 }
 
-.b2 {
+.offer-b2 {
     color: #fd8300;
     font-size: 24px;
     font-weight: bold;
