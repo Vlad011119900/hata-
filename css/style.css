@@ -217,11 +217,6 @@ a:hover>svg path {
     font-weight: bold;
 }
 
-main {
-    display: flex;
-    gap: 28px;
-}
-
 .company {
     margin-bottom: 28px;
     color: #24242b;
@@ -256,6 +251,12 @@ main {
 .mau:hover {
     color: #fd8300;
     text-decoration: underline;
+}
+
+table, td, th{
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
 }
 
 .driver {
