@@ -284,11 +284,6 @@ table th {
     font-family: "Roboto Slab";
 }
 
-.first-table {
-    display: block;
-    max-width: 293px;
-}
-
 .driver {
     margin: 33px 0;
     height: 1px;
