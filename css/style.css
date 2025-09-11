@@ -122,7 +122,8 @@ a:hover>svg path {
     padding: 84px 0 29px;
 }
 
-.skype , .gmail {
+.skype,
+.gmail {
     display: flex;
     gap: 10px;
 }
@@ -225,6 +226,15 @@ a:hover>svg path {
     font-family: "Roboto Slab";
 }
 
+main {
+    grid-area: main;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+}
+
 .main-text p {
     width: 677px;
     color: #666666;
@@ -232,7 +242,7 @@ a:hover>svg path {
     line-height: 1.7em;
 }
 
-.mtp1{
+.mtp1 {
     margin-bottom: 23px;
 }
 
@@ -253,10 +263,30 @@ a:hover>svg path {
     text-decoration: underline;
 }
 
-table, td, th{
+.table {
+    min-width: 960px;
     width: 100%;
+}
+
+table,
+td,
+th {
     border: 1px solid #000;
     border-collapse: collapse;
+}
+
+table th {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #1f1f56;
+    font-weight: bold;
+    font-family: "Roboto Slab";
+}
+
+.first-table {
+    display: block;
+    max-width: 293px;
 }
 
 .driver {
@@ -273,11 +303,11 @@ table, td, th{
     font-family: "Roboto Slab";
 }
 
-figcaption{
+figcaption {
     position: relative;
 }
 
-.project-a{
+.project-a {
     position: absolute;
     display: block;
     width: 100%;
@@ -294,19 +324,20 @@ figcaption{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-.project-card-hover{
+
+.project-card-hover {
     text-decoration: none;
 }
 
-figcaption h3{
+figcaption h3 {
     text-decoration: none;
 }
 
-figcaption a:hover ~ h3 {
+figcaption a:hover~h3 {
     text-decoration: underline;
 }
 
-figcaption a:hover ~ picture > img {
+figcaption a:hover~picture>img {
     transform: scale(1.05);
 }
 
@@ -336,7 +367,7 @@ figcaption a:hover ~ picture > img {
     line-height: 1.3em;
 }
 
-.aside{
+.aside {
     position: sticky;
     top: 53px;
 }
@@ -362,7 +393,8 @@ aside p {
 .ul2 li {
     background-color: #e4e4ec;
 }
-.ul2 li + li{
+
+.ul2 li+li {
     border-top: 1px solid #cecedd;
 }
 
@@ -402,11 +434,11 @@ aside p {
     border: none;
 }
 
-.ulinul{
+.ulinul {
     display: none;
 }
 
-.ul2 li:hover > .ulinul{
+.ul2 li:hover>.ulinul {
     display: block;
 }
 
