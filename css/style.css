@@ -72,12 +72,14 @@ header {
 
 .header_blue {
     position: fixed;
+    z-index: 3;
     padding: 16px 0;
     width: 100%;
     background-color: #1f1f56;
 }
 
 .menu1 {
+    position: relative;
     display: flex;
     gap: 20px;
     list-style: none;
@@ -216,6 +218,17 @@ a:hover>svg path {
     color: #fd8300;
     font-size: 24px;
     font-weight: bold;
+}
+
+.table-ulinul{
+    position: absolute;
+    top: -100px;
+    z-index: 2;
+    background-color: #e4e4ec;
+}
+
+.menu1 li:hover>.table-ulinul {
+    top: 47px;
 }
 
 .table-company {
