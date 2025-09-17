@@ -218,6 +218,14 @@ a:hover>svg path {
     font-weight: bold;
 }
 
+.table-company {
+    margin-bottom: 22px;
+    color: #24242b;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
 .company {
     margin-bottom: 28px;
     color: #24242b;
@@ -264,14 +272,15 @@ main {
 }
 
 .table {
+    overflow: hidden;
+    border-radius: 3px;
     min-width: 960px;
     width: 100%;
 }
 
 table,
-td,
-th {
-    border: 1px solid #000;
+td {
+    border: 1px solid #cecedd;
     border-collapse: collapse;
 }
 
@@ -282,6 +291,60 @@ table th {
     background-color: #1f1f56;
     font-weight: bold;
     font-family: "Roboto Slab";
+}
+
+th {
+    border: 1px solid #274569;
+    border-collapse: collapse;
+}
+
+.first-th {
+    padding: 23px 0;
+}
+
+td {
+    background-color: #e4e4ec;
+}
+
+tr td {
+    transition: .4s;
+}
+
+tr:hover td {
+    border: 1px solid #fd8300;
+    background-color: #fd8300;
+}
+
+tr a {
+    transition: .4s;
+}
+
+tr:hover a {
+    color: #fff;
+}
+
+td a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    padding: 8px 20px;
+}
+
+.table-p {
+    min-width: 828px;
+}
+
+.main-text-table {
+    margin-bottom: 27px;
+}
+
+.more-info{
+    margin: 25px 0;
+font-size: 13px;
+line-height: 21px;
+color: #666;
+font-family: "Arial";
 }
 
 .driver {
