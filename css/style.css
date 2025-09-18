@@ -238,25 +238,41 @@ a:hover>svg path {
 }
 
 .table-ulinul li a {
-    padding: 8px;
+    padding: 12px;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #25252c;
 }
 
-.table-ulinul li+li{
+.table-ulinul li+li {
     border-top: 1px solid #cecedd;
 }
 
-.table-last-nlinul{
+.table-last-nlinul {
     position: relative;
 }
 
-.ulinulinul{
+.ulinulinul {
     position: absolute;
     left: 100%;
-    top: 100%;
+    top: -1000px;
+    min-width: 125px;
+    max-height: 120px;
+    border-radius: 3px;
+    background-color: #e4e4ec;
+}
+
+.ulinulinul li a {
+    padding: 12px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #25252c;
+}
+
+.table-ulinul li:hover>.ulinulinul {
+    top: 0%;
 }
 
 .table-company {
@@ -265,6 +281,19 @@ a:hover>svg path {
     font-size: 24px;
     font-weight: 700;
     font-family: "Roboto Slab";
+}
+
+.map {
+    position: relative;
+    max-width: 466px;
+    max-height: 295px;
+}
+
+.map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 295px;
 }
 
 .company {
@@ -276,7 +305,9 @@ a:hover>svg path {
 }
 
 main {
+    overflow: hidden;
     grid-area: main;
+    min-height: 634px;
 }
 
 .main {
@@ -386,6 +417,20 @@ td a {
     line-height: 21px;
     color: #666;
     font-family: "Arial";
+}
+
+.contacts-p1 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    padding: 7px 0;
+}
+
+.contacts-p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    padding: 11px 0;
 }
 
 .driver {
