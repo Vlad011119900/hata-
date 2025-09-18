@@ -224,7 +224,7 @@ a:hover>svg path {
     top: -100px;
     z-index: 2;
     min-width: 125px;
-    max-height: 120px;
+    min-height: 120px;
     border-radius: 3px;
     background-color: #e4e4ec;
 }
@@ -258,7 +258,7 @@ a:hover>svg path {
     left: 100%;
     top: -1000px;
     min-width: 125px;
-    max-height: 120px;
+    min-height: 120px;
     border-radius: 3px;
     background-color: #e4e4ec;
 }
