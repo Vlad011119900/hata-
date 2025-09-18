@@ -77,6 +77,11 @@ header {
     background-color: #1f1f56;
 }
 
+.box-shadow{
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+    margin-bottom: 40px;    
+}
+
 .menu1 {
     position: relative;
     display: flex;
@@ -221,7 +226,7 @@ a:hover>svg path {
 
 .table-ulinul {
     position: absolute;
-    top: 150px;
+    top: -150px;
     z-index: 2;
     min-width: 125px;
     min-height: 120px;
@@ -238,6 +243,7 @@ a:hover>svg path {
 }
 
 .table-ulinul li a {
+    position: relative;
     padding: 12px 9px;
     font-size: 12px;
     letter-spacing: 2px;
@@ -248,6 +254,7 @@ a:hover>svg path {
 .table-ulinul a:before {
     content: "";
     position: absolute;
+    top: 50%;
     left: 107px;
     display: block;
     width: 8px;
@@ -255,7 +262,7 @@ a:hover>svg path {
     border-top: 2px solid #666666;
     border-right: 2px solid #666666;
     transform: translateY(-50%) rotate(45deg);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .table-ulinul li {
@@ -266,8 +273,20 @@ a:hover>svg path {
     border-top: 1px solid #cecedd;
 }
 
-.table-last-nlinul {
+.table-last-linul {
     position: relative;
+}
+
+.table-ulinil li:hover>a {
+    color: #fff;
+    background-color: #fd8300;
+    border: none;
+}
+
+.table-ulinil :hover li {
+    color: #fff;
+    background-color: #fd8300;
+    border: none;
 }
 
 .ulinulinul {
@@ -281,15 +300,23 @@ a:hover>svg path {
 }
 
 .ulinulinul li a {
-    padding: 12px;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #25252c;
 }
 
+.table-ulinul li:hover>a:before {
+    border-color: #fff;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.ulinulinul a:before {
+    border-color: transparent;
+}
+
 .table-ulinul li:hover>.ulinulinul {
-    top: 0%;
+    top: 90px;
 }
 
 .table-company {
