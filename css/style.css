@@ -56,6 +56,14 @@ body a {
     align-items: center;
 }
 
+.text-align{
+    text-align: center;
+}
+
+.text-align-end{
+    text-align: end;
+}
+
 a {
     text-decoration: none;
 }
