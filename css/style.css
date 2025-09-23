@@ -30,10 +30,10 @@ body {
         "header"
         "main"
         "footer";
-    font-family: Arial, sans-serif;
-}
-
-body {
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
     cursor: url('../img/cursor2.cur'), auto;
 }
 
@@ -64,6 +64,17 @@ body a {
     text-align: end;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.column-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
 a {
     text-decoration: none;
 }
@@ -81,7 +92,6 @@ header {
 .header_blue {
     width: 100%;
     background-color: #1f1f56;
-    z-index: 2;
 }
 
 .box-shadow {
@@ -90,7 +100,6 @@ header {
 }
 
 .menu1 {
-    position: relative;
     display: flex;
     gap: 20px;
     list-style: none;
@@ -231,15 +240,23 @@ a:hover>svg path {
     font-weight: bold;
 }
 
+#header-ulinul {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.table-ulinul li {
+    padding: 2.7px;
+}
+
 .table-ulinul {
     position: absolute;
     top: -150px;
     z-index: 1;
     min-width: 125px;
-    min-height: 120px;
     border-radius: 3px;
     background-color: #e4e4ec;
-    transition: .6s;
 }
 
 .li-height {
@@ -252,7 +269,7 @@ a:hover>svg path {
 
 .table-ulinul li a {
     position: relative;
-    padding: 11px 9px;
+    padding: 0 9px;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 2em;
@@ -271,10 +288,6 @@ a:hover>svg path {
     border-right: 2px solid #666666;
     transform: translateY(-50%) rotate(45deg);
     transition: 0.5s;
-}
-
-.table-ulinul li {
-    min-height: 29px;
 }
 
 .table-ulinul li+li {
@@ -299,15 +312,15 @@ a:hover>svg path {
 
 .ulinulinul {
     position: absolute;
-    left: 100%;
+    left: calc(100% + 5px);
     top: -200px;
     min-width: 125px;
-    min-height: 120px;
     border-radius: 3px;
     background-color: #e4e4ec;
 }
 
 .ulinulinul li a {
+    display: block;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 24px;
@@ -327,6 +340,16 @@ a:hover>svg path {
     top: 90px;
 }
 
+.ulinulinul li:hover>a:before {
+    border-color: transparent;
+}
+
+.table-ulinil .ulniulinil li:hover>a {
+    color: #fff;
+    background-color: #fd8300;
+    border: none;
+}
+
 .table-company {
     margin-bottom: 22px;
     color: #24242b;
@@ -337,15 +360,19 @@ a:hover>svg path {
 
 .map {
     position: relative;
+    overflow: hidden;
     max-width: 466px;
     max-height: 295px;
+    min-height: 295px;
+    width: 100%;
 }
 
 .map iframe {
     position: absolute;
+    top: -60px;
     width: 100%;
     height: 100%;
-    min-height: 295px;
+    min-height: 355px;
 }
 
 .company {
@@ -701,11 +728,6 @@ footer {
     gap: 20px;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
 
 .footer-gray {
     padding: 16px;
