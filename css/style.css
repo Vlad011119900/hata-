@@ -30,10 +30,10 @@ body {
         "header"
         "main"
         "footer";
-        font-family: Arial, sans-serif;
-    }
-    
-    body {
+    font-family: Arial, sans-serif;
+}
+
+body {
     cursor: url('../img/cursor2.cur'), auto;
 }
 
@@ -246,11 +246,7 @@ a:hover>svg path {
     flex-direction: column;
 }
 
-.table-ulinul li {
-    padding: 2.7px;
-}
-
-.table-ulinul {
+.header-ulinul {
     position: absolute;
     top: -150px;
     z-index: 1;
@@ -263,20 +259,36 @@ a:hover>svg path {
     padding: 18px 0 18px 0;
 }
 
-.menu1 li:hover>.table-ulinul {
-    top: calc(100% + 5%);
+.menu1 li:hover>.header-ulinul {
+    top: calc(100% + 1%);
 }
 
-.table-ulinul li a {
+.header-ulinul li {
+    transition: .5s;
+}
+
+.header-ulinul li:hover {
+    background-color: #fd8300;
+}
+
+.header-ulinul li:hover>a {
+    color: #fff;
+}
+
+.header-ulinul li a {
     position: relative;
-    padding: 0 9px;
+    padding: 3.7px 11.7px;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 2em;
     color: #25252c;
 }
 
-.table-ulinul a:before {
+.header-ulinul li {
+    padding: 2.7px 0;
+}
+
+.header-ulinul a:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -290,7 +302,7 @@ a:hover>svg path {
     transition: 0.5s;
 }
 
-.table-ulinul li+li {
+.header-ulinul li+li {
     border-top: 1px solid #cecedd;
 }
 
@@ -298,22 +310,10 @@ a:hover>svg path {
     position: relative;
 }
 
-.table-ulinil li:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-    border: none;
-}
-
-.table-ulinil :hover li {
-    color: #fff;
-    background-color: #fd8300;
-    border: none;
-}
-
 .ulinulinul {
     position: absolute;
     left: calc(100% + 5px);
-    top: -200px;
+    top: -250px;
     min-width: 125px;
     border-radius: 3px;
     background-color: #e4e4ec;
@@ -327,7 +327,7 @@ a:hover>svg path {
     color: #25252c;
 }
 
-.table-ulinul li:hover>a:before {
+.header-ulinul li:hover>a:before {
     border-color: #fff;
     transform: translateY(-50%) rotate(135deg);
 }
@@ -336,18 +336,12 @@ a:hover>svg path {
     border-color: transparent;
 }
 
-.table-ulinul li:hover>.ulinulinul {
+.header-ulinul li:hover>.ulinulinul {
     top: 90px;
 }
 
 .ulinulinul li:hover>a:before {
     border-color: transparent;
-}
-
-.table-ulinil .ulniulinil li:hover>a {
-    color: #fff;
-    background-color: #fd8300;
-    border: none;
 }
 
 .table-company {
