@@ -248,7 +248,7 @@ a:hover>svg path {
 
 .header-ulinul {
     position: absolute;
-    top: -150px;
+    top: 150px;
     z-index: 1;
     min-width: 125px;
     border-radius: 3px;
@@ -275,9 +275,14 @@ a:hover>svg path {
     color: #fff;
 }
 
+.header-last-ulinul li:hover {
+    background-color: #fd8300;
+    border-radius: 0 0 3px 3px;
+}
+
 .header-ulinul li a {
     position: relative;
-    padding: 3.7px 11.7px;
+    padding: 3.7px 10px;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 2em;
@@ -306,8 +311,16 @@ a:hover>svg path {
     border-top: 1px solid #cecedd;
 }
 
-.table-last-linul {
+.header-last-ulinul {
     position: relative;
+}
+
+.header-ulinul .ulinulinul li{
+    padding: 0;
+}
+
+.header-ulinul .ulinulinul li a{
+    padding: 2.7px 10.7px;
 }
 
 .ulinulinul {
