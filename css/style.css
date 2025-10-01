@@ -145,8 +145,13 @@ input {
 
 .popup-button {
     background-color: #fd8300;
+    border: none;
     border-radius: 22px;
     width: 100%;
+}
+
+.popup-button:focus {
+    border: none;
 }
 
 .popup-button p {
@@ -459,7 +464,6 @@ a:hover>svg path {
 main {
     overflow: hidden;
     grid-area: main;
-    min-height: 634px;
 }
 
 .main {
@@ -561,6 +565,22 @@ td a {
 
 .main-text-table {
     margin-bottom: 27px;
+}
+
+.contacts-iframes {
+    max-width: 466px;
+}
+
+.contacts-iframes h3 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+#contacts-iframes {
+    margin-bottom: 41px;
 }
 
 .more-info {
