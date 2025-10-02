@@ -94,7 +94,7 @@ header {
 }
 
 .dark-bgc {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -131,6 +131,7 @@ input {
 
 .popup {
     position: absolute;
+    display: none;
     left: 325px;
     z-index: 2;
     max-width: 300px;
