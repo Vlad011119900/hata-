@@ -121,11 +121,20 @@ input {
     color: #a5a7a8;
 }
 
+#cancel {
+    cursor: url('../img/cursor.cur'), auto;
+}
+
 #popup-margin {
     margin: 10px 0;
 }
 
 #popup h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
     margin-bottom: 19px;
 }
 
@@ -145,14 +154,24 @@ input {
 }
 
 .popup-button {
-    background-color: #fd8300;
-    border: none;
-    border-radius: 22px;
-    width: 100%;
+    cursor: url('../img/cursor.cur'), auto;
 }
 
-.popup-button:focus {
-    border: none;
+.popup-button {
+    border: 2px solid #fd8300;
+    background-color: transparent;
+    border-radius: 22px;
+    width: 100%;
+    transition: .5s;
+}
+
+.popup-button:hover {
+    border: 2px solid #fd8300;
+    background-color: #fd8300;
+}
+
+.popup-button:hover p {
+    color: #fff;
 }
 
 .popup-button p {
@@ -160,10 +179,11 @@ input {
     padding: 9.5px;
     font-size: 14px;
     line-height: 24px;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     font-family: "Arial";
     text-align: center;
+    transition: .5s;
 }
 
 .header_blue {
