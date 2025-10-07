@@ -93,7 +93,7 @@ header {
     position: relative;
 }
 
-.dark-bgc {
+#darkbgc {
     display: none;
     position: fixed;
     top: 0;
@@ -110,7 +110,7 @@ input {
     outline: none;
 }
 
-.cancel {
+#cancel {
     position: absolute;
     display: block;
     right: 14px;
@@ -125,11 +125,11 @@ input {
     margin: 10px 0;
 }
 
-.popup h2 {
+#popup h2 {
     margin-bottom: 19px;
 }
 
-.popup {
+#popup {
     position: absolute;
     display: none;
     left: 325px;
@@ -272,6 +272,7 @@ a:hover>svg path {
 
 .signup-btn:hover {
     background-color: #fd8300;
+    color: #fff;
 }
 
 .divider-line {
@@ -381,6 +382,10 @@ a:hover>svg path {
 
 .header-ulinul li+li {
     border-top: 1px solid #cecedd;
+}
+
+.header-ulinul li:hover li+li {
+    border-top: 1px solid #fd8300;
 }
 
 .header-last-ulinul {
@@ -639,6 +644,12 @@ figcaption {
 .projects-flex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.table-projects-flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 

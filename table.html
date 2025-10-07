@@ -10,12 +10,15 @@
 
 <body>
     <header class="header box-shadow">
-        <div class="dark-bgc"></div>
+        <div id="darkbgc"></div>
         <div class="header_blue">
             <div class="wrapper items_center space_between">
                 <ul class="menu1 space_between">
                     <li class="menu1_list li-height">
                         <a href="index.html" class="menu1_link">Головна</a>
+                    </li>
+                    <li>
+                        <a href="#" id="popupopen">попап</a>
                     </li>
                     <li class="menu1_list li-height">
                         <a href="#" class="menu1_link">Про компанію</a>
@@ -129,8 +132,8 @@
     <div class="wrapper">
         <main>
             <section class="relative">
-                <div class="popup">
-                    <div class="cancel">x</div>
+                <div id="popup">
+                    <div id="cancel">x</div>
                     <form action="">
                         <h2>Замовити дзвінок</h2>
                         <div class="popup-inputs">
@@ -219,7 +222,7 @@
             <div class="projects">
                 <div class="projects">
                     <h2 class="projects-title">Популярні проекти</h2>
-                    <div class="projects-flex">
+                    <div class="table-projects-flex">
                         <figure>
                             <figcaption class="project-card">
                                 <a href="#" class="project-a"></a>
@@ -255,6 +258,20 @@
                                     <p>Загальна площа будови: 272 м²</p>
                                     <p>Кількість спалень: 3</p>
                                     <p>Гараж: 2 авто</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <div class="project-card">
+                                    <a href="#" class="project-a"></a>
+                                    <picture>
+                                        <img src="img/hata-5.png" alt="Будинок CALGARY" class="project-image">
+                                    </picture>
+                                    <h3>RICHMOND (324 м²)</h3>
+                                    <p>Загальна площа будови: 242 м²</p>
+                                    <p>Кількість спалень: 3</p>
+                                    <p>Гараж: 3 авто</p>
                                 </div>
                             </figcaption>
                         </figure>
