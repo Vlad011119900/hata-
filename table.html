@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="header box-shadow">
-        <div id="darkbgc"></div>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <header class="header box-shadow">
+            <div id="darkbgc"></div>
+            <section class="relative">
+                <div id="popup">
+                    <a href="#" id="cancel">x</a>
+                    <form action="">
+                        <h2>Замовити дзвінок</h2>
+                        <div class="popup-inputs">
+                            <input type="text" name="popup-name" placeholder="Ваше ім’я">
+                            <input type="tel" name="popup-tel" placeholder="телефон" id="popup-margin">
+                        </div>
+                        <button type="submit" class="popup-button">
+                            <p>Надіслати</p>
+                        </button>
+                    </form>
+                </div>              
+            </section>
         <div class="header_blue">
             <div class="wrapper items_center space_between">
                 <ul class="menu1 space_between">
@@ -44,10 +59,10 @@
                         </ul>
                     </li>
                     <li class="menu1_list li-height">
-                        <a href="contacts.html" class="menu1_link">Акції</a>
+                        <a href="#" class="menu1_link">Акції</a>
                     </li>
                     <li class="menu1_list li-height">
-                        <a href="#" class="menu1_link">Контакти</a>
+                        <a href="contacts.html" class="menu1_link">Контакти</a>
                     </li>
                 </ul>
                 <ul class="svgs">
@@ -128,21 +143,6 @@
     </header>
     <div class="wrapper">
         <main>
-            <section class="relative">
-                <div id="popup">
-                    <a href="#" id="cancel">x</a>
-                    <form action="">
-                        <h2>Замовити дзвінок</h2>
-                        <div class="popup-inputs">
-                            <input type="text" name="popup-name" placeholder="Ваше ім’я">
-                            <input type="tel" name="popup-tel" placeholder="телефон" id="popup-margin">
-                        </div>
-                        <button type="submit" class="popup-button">
-                            <p>Надіслати</p>
-                        </button>
-                    </form>
-                </div>
-            </section>
             <section class="main-text main-text-table">
                 <h1 class="table-company">Ціни на послуги тимчасового проживання</h1>
                 <p class="table-p">Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом,
