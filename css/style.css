@@ -51,6 +51,11 @@ body a {
     justify-content: space-between;
 }
 
+.flex{
+    display: flex;
+    gap: 10px;
+}
+
 .items_center {
     display: flex;
     align-items: center;
@@ -139,11 +144,11 @@ input {
 }
 
 #popup {
-    position: absolute;
+    position: fixed;
     display: none;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     z-index: 2;
     width: 100%;
     max-width: 360px;
@@ -357,12 +362,20 @@ a:hover>svg path {
     background-color: #e4e4ec;
 }
 
+.header-ulinul li:nth-child(1):hover {
+    border-radius: 3px 3px 0 0;
+}
+
+.header-ulinul li:nth-last-child(1):hover {
+    border-radius: 0 0 3px 3px;
+}
+
 .li-height {
     padding: 18px 0 18px 0;
 }
 
 .menu1 li:hover>.header-ulinul {
-    top: calc(100% + 1%);
+    top: calc(100% + 3%);
 }
 
 .header-ulinul li {
@@ -375,6 +388,12 @@ a:hover>svg path {
 
 .header-ulinul li:hover>a {
     color: #fff;
+}
+
+.class {
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
 }
 
 .header-ulinul li a {
@@ -553,7 +572,8 @@ th {
 }
 
 .first-th {
-    padding: 23px 0;
+    padding: 23px 20px;
+    text-align: left;
 }
 
 td {
