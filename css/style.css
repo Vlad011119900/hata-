@@ -51,7 +51,7 @@ body a {
     justify-content: space-between;
 }
 
-.flex{
+.flex {
     display: flex;
     gap: 10px;
 }
@@ -396,6 +396,10 @@ a:hover>svg path {
     color: #666666;
 }
 
+.galochka {
+    max-width: 15px;
+}
+
 .header-ulinul li a {
     position: relative;
     padding: 3.7px 10px;
@@ -544,7 +548,7 @@ main {
     text-decoration: underline;
 }
 
-.prise{
+.prise {
     padding: 23px 20px;
     text-align: right;
 }
@@ -655,6 +659,8 @@ td a {
     color: #666666;
     padding: 11px 0;
 }
+
+
 
 .driver {
     margin: 33px 0;
