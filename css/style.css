@@ -544,6 +544,11 @@ main {
     text-decoration: underline;
 }
 
+.prise{
+    padding: 23px 20px;
+    text-align: right;
+}
+
 .table {
     overflow: hidden;
     border-radius: 3px;
