@@ -374,8 +374,24 @@ a:hover>svg path {
     padding: 18px 0 18px 0;
 }
 
+.header-last-ulinul::before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 100%;
+    height: 100%;
+}
+
+.header-ulinul::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 100%;
+}
+
 .menu1 li:hover>.header-ulinul {
-    top: calc(100% + 3%);
+    top: calc(100% + 5px);
 }
 
 .header-ulinul li {
@@ -445,7 +461,7 @@ a:hover>svg path {
 
 .ulinulinul {
     position: absolute;
-    left: calc(100% + 2px);
+    left: calc(100% + 5px);
     top: -3000px;
     min-width: 125px;
     border-radius: 3px;
@@ -634,8 +650,19 @@ td a {
     font-family: "Roboto Slab";
 }
 
+.iframes {
+    padding: 10.4px;
+}
+
 #contacts-iframes {
     margin-bottom: 41px;
+}
+
+.contacts-forms-grid{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
 }
 
 .more-info {

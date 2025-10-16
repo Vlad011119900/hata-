@@ -14,7 +14,7 @@
         <section class="relative">
             <div id="popup">
                 <a href="#" id="cancel">x</a>
-                <form action="">
+                <form action="" method="post">
                     <h2>Замовити дзвінок</h2>
                     <div class="popup-inputs">
                         <input type="text" name="popup-name" placeholder="Ваше ім’я">
@@ -193,16 +193,22 @@
             </div>
             <div class="contacts-iframes">
                 <h3>Форма зворотнього зв’язку</h3>
-                <form action="" id="contacts-grid">
-                    <input type="text" name="contacts-name" placeholder="Ваше ім’я">
-                    <input type="tel" name="contacts-tel" placeholder="телефон" id="popup-margin">
+                <form action="" id="contacts-grid" method="post">
+                    <div>
+                        <div class="">
+                            <input type="text" name="contacts-name" placeholder="Ваше ім’я" class="iframes">
+                        </div>
+                        <div>
+                            <input type="tel" name="contacts-tel" placeholder="телефон" id="popup-margin" class="iframes">
+                        </div>
+                    </div>
                     <input type="text" placeholder="Тема повідомлення">
                     <textarea name="contacts-textarea" id="" placeholder="текст"></textarea>
                     <button type="submit" class="popup-button">
                         <p>Відправити</p>
                     </button>
                     <div class="flex">
-                        <div id="galochka"><input type="checkbox" name="galochka"></div>
+                        <div id="galochka"><input type="checkbox" name="galochka" value="news"></div>
                         <p class="class">Я бажаю отримувати останні новини</p>
                     </div>
                 </form>
