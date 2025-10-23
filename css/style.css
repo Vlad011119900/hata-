@@ -46,6 +46,11 @@ body a {
     max-width: 960px;
 }
 
+#gap {
+    display: flex;
+    gap: 10px;
+}
+
 .space_between {
     display: flex;
     justify-content: space-between;
@@ -261,6 +266,16 @@ a:hover>svg path {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    transition: .3s;
+}
+
+.contacts a:hover{
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.contacts_link:hover{
+    color: #fd8300;
 }
 
 .contacts-no2 {
@@ -277,6 +292,11 @@ a:hover>svg path {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: underline;
+    transition: .3s;
+}
+
+.gmail a:hover {
+    color: #fd8300;
 }
 
 .skype a {
@@ -284,6 +304,11 @@ a:hover>svg path {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
+    transition: .3s;
+}
+
+.skype a:hover {
+    color: #fd8300;
 }
 
 .signup-btn {
@@ -654,11 +679,15 @@ td a {
     padding: 10.4px;
 }
 
+.iframes-div {
+    width: 50%;
+}
+
 #contacts-iframes {
     margin-bottom: 41px;
 }
 
-.contacts-forms-grid{
+.contacts-forms-grid {
     display: flex;
     justify-content: space-between;
     text-align: center;

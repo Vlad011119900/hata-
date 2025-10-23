@@ -193,17 +193,17 @@
             </div>
             <div class="contacts-iframes">
                 <h3>Форма зворотнього зв’язку</h3>
-                <form action="" id="contacts-grid" method="post">
-                    <div>
-                        <div class="">
-                            <input type="text" name="contacts-name" placeholder="Ваше ім’я" class="iframes">
+                <form action="contactssend.php" id="contacts-grid" method="post">
+                    <div class="space_between" id="gap">
+                        <div class="iframes-div">
+                            <input type="text" name="contactsname" placeholder="Ваше ім’я" class="iframes">
                         </div>
-                        <div>
-                            <input type="tel" name="contacts-tel" placeholder="телефон" id="popup-margin" class="iframes">
+                        <div class="iframes-div">
+                            <input type="tel" name="contactstel" placeholder="телефон" class="iframes">
                         </div>
                     </div>
-                    <input type="text" placeholder="Тема повідомлення">
-                    <textarea name="contacts-textarea" id="" placeholder="текст"></textarea>
+                    <input type="text" placeholder="Тема повідомлення" name="contactsmessage" class="iframes">
+                    <textarea name="contacts-textarea" placeholder="текст" name="contactstext"></textarea>
                     <button type="submit" class="popup-button">
                         <p>Відправити</p>
                     </button>
