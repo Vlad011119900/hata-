@@ -144,26 +144,28 @@
     <main>
         <section class="space_between wrapper">
             <div>
-                <h4>Наш офіс</h4>
-                <p class="contacts-p">с. Війтівці, Хмельницька обл. 27500</p>
-                <div class="contacts_block contacts">
-                    <div class="contacts column">
-                        <div class="contacts">
+                <h2 class="contacts-h2">Наш офіс</h2>
+                <p class="contacts-p contacts-p-margin">с. Війтівці, Хмельницька обл. 27500</p>
+                <div class="column">
+                    <div class="contacts_block contacts">
+                        <div class="contacts column">
+                            <div class="contacts">
+                                <a href="tel:+3801002525" class="contacts_link">+38(097) 100-25-25</a>
+                            </div>
                             <a href="tel:+3801002525" class="contacts_link">+38(097) 100-25-25</a>
                         </div>
-                        <a href="tel:+3801002525" class="contacts_link">+38(097) 100-25-25</a>
                     </div>
-                </div>
-                <div class="gmail">
-                    <a href=# class="gmail_link">hataplushata.com.ua</a>
+                    <div class="gmail">
+                        <a href=# class="gmail_link">hataplushata.com.ua</a>
+                    </div>
                 </div>
             </div>
             <div>
-                <h4>Консультація</h4>
+                <h2 class="contacts-h2">Консультація</h2>
                 <div class="contacts_block contacts">
                     <div class="contacts column-contacts">
                         <div class="contacts">
-                            <p class="contacts-p">менеджер:</p>
+                            <p class="contacts-p contacts-p-margin">менеджер:</p>
                             <a href="tel:+3801002525" class="contacts_link">+38(097) 100-25-25</a>
                         </div>
                         <p class="contacts-p">директор:</p>
@@ -171,8 +173,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <h4>Реквізити</h4>
+            <div class="column">
+                <h2 class="contacts-h2">Реквізити</h2>
                 <div class="contacts-p1">
                     <p>ЄДРПОУ 60045123, ІПН 991097555173</p>
                     <p>Св.№59904423</p>
@@ -186,13 +188,13 @@
         <div class="wrapper">
             <div class="driver"></div>
         </div>
-        <section class="wrapper space_between" id="contacts-iframes">
+        <section class="wrapper" id="contacts-iframes">
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/d/embed?mid=13Cyqeya1qnJsGyXdegm3o1bF_9_j2Ro&ehbc=2E312F"></iframe>
             </div>
             <div class="contacts-iframes">
-                <h3>Форма зворотнього зв’язку</h3>
+                <h2>Форма зворотнього зв’язку</h2>
                 <form action="contactssend.php" id="contacts-grid" method="post">
                     <div class="space_between" id="gap">
                         <div class="iframes-div">
@@ -202,14 +204,17 @@
                             <input type="tel" name="contactstel" placeholder="телефон" class="iframes">
                         </div>
                     </div>
-                    <input type="text" placeholder="Тема повідомлення" name="contactsmessage" class="iframes">
-                    <textarea name="contacts-textarea" placeholder="текст" name="contactstext"></textarea>
-                    <button type="submit" class="popup-button">
-                        <p>Відправити</p>
-                    </button>
+                    <input type="text" placeholder="Тема повідомлення" name="contactsmessage" class="iframes"
+                        id="contactsmessage">
+                    <textarea placeholder="текст" name="contactstext" id="contactstext"></textarea>
                     <div class="flex">
-                        <div id="galochka"><input type="checkbox" name="galochka" value="news"></div>
-                        <p class="class">Я бажаю отримувати останні новини</p>
+                            <button type="submit" class="popup-button" id="contacts-button">
+                                <p>Відправити</p>
+                            </button>
+                        <div class="flex">
+                            <div id="galochka"><input type="checkbox" name="galochka" value="news"></div>
+                            <p class="class">Я бажаю отримувати останні новини</p>
+                        </div>
                     </div>
                 </form>
             </div>
