@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Будівельна компанія Хата Плюс</title>
-    </head>
-    
-    <body>
-        <header class="header">
-            <div id="darkbgc"></div>
-            <section class="relative">
-                <div id="popup">
-                    <a href="#" id="cancel">x</a>
-                    <form action="send.php" method="post">
-                        <h2>Замовити дзвінок</h2>
-                        <div class="popup-inputs">
-                            <input type="text" name="name" placeholder="Ваше ім’я">
-                            <input type="tel" name="tel" placeholder="телефон" id="popup-margin">
-                        </div>
-                        <button type="submit" class="popup-button">
-                            <p>Надіслати</p>
-                        </button>
-                    </form>
-                </div>
-            </section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Будівельна компанія Хата Плюс</title>
+</head>
+
+<body>
+    <header class="header">
+        <div id="darkbgc"></div>
+        <section class="relative">
+            <div id="popup">
+                <a href="#" id="cancel">x</a>
+                <form action="send.php" method="post">
+                    <h2>Замовити дзвінок</h2>
+                    <div class="popup-inputs">
+                        <input type="text" name="name" placeholder="Ваше ім’я">
+                        <input type="tel" name="tel" placeholder="телефон" id="popup-margin">
+                    </div>
+                    <button type="submit" class="popup-button">
+                        <p>Надіслати</p>
+                    </button>
+                </form>
+            </div>
+        </section>
         <div class="header_blue">
-            <div class="wrapper items_center space_between">
-                <ul class="menu1 space_between">
+            <div class="wrapper burger-flex">
+                <div id="burger">
+                    <svg width="40" height="30" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="8" x2="40" y2="8" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                        <line x1="0" y1="18" x2="40" y2="18" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                        <line x1="0" y1="28" x2="40" y2="28" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <ul class="menu1 space_between" id="menu1">
                     <li class="menu1_list li-height">
                         <a href="index.html" class="menu1_link">Головна</a>
                     </li>
@@ -72,6 +79,7 @@
                     <li class="menu1_list li-height">
                         <a href="contacts.html" class="menu1_link">Контакти</a>
                     </li>
+                    <li id="burgercancel">x</li>
                 </ul>
                 <ul class="svgs">
                     <li class="svgs_list">
@@ -156,7 +164,7 @@
             </a>
         </div>
     </header>
-    <main class="wrapper space_between main">
+    <main class="space_between-main main wrapper">
         <div>
             <section>
                 <h1 class="company">Компанія “Хата Плюс"</h1>
@@ -175,18 +183,18 @@
                         якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити
                         альтанку
                         і барбекю.</p>
-                    <a href="#" class="mau">
-                        <b>Детальніше про нас</b>
-                    </a>
                 </div>
+                <a href="#" class="mau">
+                    <b>Детальніше про нас</b>
+                </a>
             </section>
             <section>
                 <div class="driver"></div>
                 <div class="projects">
                     <div class="projects">
                         <h2 class="projects-title">Популярні проекти</h2>
-                        <div class="projects-flex">
-                            <figure>
+                        <div class="projects-flex projects-owerflow">
+                            <figure class="projects-owerflo">
                                 <figcaption class="project-card">
                                     <a href="#" class="project-a"></a>
                                     <picture>

@@ -47,6 +47,7 @@ body a {
 
 .wrapper {
     margin: 0 auto;
+    padding: 0 15rem;
     max-width: 960rem;
 }
 
@@ -64,6 +65,36 @@ body a {
     display: flex;
     align-items: center;
     gap: 10rem;
+}
+
+.burger-flex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.menu1 {
+    position: absolute;
+    background-color: #1f1f56;
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    transition: all .5s ease;
+}
+
+#burger {
+    display: block;
+}
+
+#burgercancel {
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+    display: block;
+    font-size: 20rem;
+    color: #666;
 }
 
 .items_center {
@@ -93,11 +124,18 @@ body a {
     font-family: "Roboto Slab";
 }
 
+.iframes {
+    font-style: italic;
+}
+
 textarea {
-    min-width: 466rem;
-    min-height: 105rem;
-    resize: none;
+    width: 466rem;
+    height: 105rem;
+    max-width: 466rem;
+    max-height: 105rem;
     margin-bottom: 13rem;
+    padding: 10px;
+    font-style: italic;
 }
 
 .column-contacts {
@@ -233,6 +271,7 @@ input {
 
 .menu1 {
     display: flex;
+    flex-direction: column;
     gap: 20rem;
     list-style: none;
 }
@@ -270,7 +309,7 @@ a:hover>svg path {
 
 .headerwhigt {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     align-items: center;
     gap: 20rem;
     padding: 32rem 0 29rem;
@@ -399,9 +438,15 @@ a:hover>svg path {
     flex-direction: column;
 }
 
+#header-ulinul:hover>.header-ulinul{
+    display: block;
+}
+
+
 .header-ulinul {
     position: absolute;
-    top: -150rem;
+    display: none;
+    top: calc(100% + 5rem);
     z-index: 1;
     min-width: 125rem;
     border-radius: 3rem;
@@ -434,10 +479,6 @@ a:hover>svg path {
     top: -5rem;
     width: 100%;
     height: 100%;
-}
-
-.menu1 li:hover>.header-ulinul {
-    top: calc(100% + 5rem);
 }
 
 .header-ulinul li {
@@ -507,8 +548,9 @@ a:hover>svg path {
 
 .ulinulinul {
     position: absolute;
+    display: none;
     left: calc(100% + 5rem);
-    top: -3000rem;
+    top: 0;
     min-width: 125rem;
     border-radius: 3rem;
     background-color: #e4e4ec;
@@ -532,7 +574,7 @@ a:hover>svg path {
 }
 
 .header-ulinul li:hover>.ulinulinul {
-    top: 0rem;
+    display: block;
 }
 
 .ulinulinul li:hover>a:before {
@@ -558,6 +600,7 @@ a:hover>svg path {
 
 .map iframe {
     position: absolute;
+    left: -1px;
     top: -60rem;
     width: 100%;
     height: 100%;
@@ -577,13 +620,12 @@ main {
     grid-area: main;
 }
 
-.main {
+.main-text {
     display: flex;
-    gap: 20rem;
+    flex-wrap: wrap;
 }
 
 .main-text p {
-    width: 677rem;
     color: #666666;
     font-size: 14rem;
     line-height: 1.7em;
@@ -758,7 +800,17 @@ td a {
     background-color: #dcdce6;
 }
 
+.projects {
+    max-width: 220rem;
+}
+
+.projects-owerflow {
+    max-width: 220rem;
+    overflow-x: auto;
+}
+
 .projects-title {
+    display: inline-block;
     margin-bottom: 23rem;
     color: #24242b;
     font-size: 24rem;
@@ -836,14 +888,13 @@ figcaption a:hover~picture>img {
     line-height: 1.3em;
 }
 
-.aside {
-    position: sticky;
-    top: 53rem;
+aside {
+    width: 100%;
+    max-width: 220rem;
 }
 
 aside p {
     padding: 15rem 14rem;
-    min-width: 220rem;
     color: #fff;
     font-size: 16rem;
     font-weight: bold;
@@ -984,7 +1035,33 @@ footer {
     background-color: #dcdce6;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
+    #burger {
+        display: none;
+    }
+
+    #burgercancel {
+        display: none;
+    }
+
+    .menu1 {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .cancel {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 425px) {
     html {
         font-size: .8px;
     }
@@ -994,11 +1071,39 @@ footer {
     html {
         font-size: .9px;
     }
+
+    .projects-owerflow {
+        max-width: fit-content;
+        overflow-x: visible;
+    }
+
+    .projects {
+        max-width: 700rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     html {
         font-size: 1px;
+    }
+
+    aside {
+        width: 100%;
+        min-width: 240rem;
+    }
+
+    .main {
+        display: flex;
+        gap: 20rem;
+    }
+
+    .headerwhigt {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        gap: 20rem;
+        padding: 32rem 0 29rem;
     }
 }
 

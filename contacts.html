@@ -9,16 +9,16 @@
 </head>
 
 <body>
-    <header class="header box-shadow">
+    <header class="header">
         <div id="darkbgc"></div>
         <section class="relative">
             <div id="popup">
                 <a href="#" id="cancel">x</a>
-                <form action="" method="post">
+                <form action="send.php" method="post">
                     <h2>Замовити дзвінок</h2>
                     <div class="popup-inputs">
-                        <input type="text" name="popup-name" placeholder="Ваше ім’я">
-                        <input type="tel" name="popup-tel" placeholder="телефон" id="popup-margin">
+                        <input type="text" name="name" placeholder="Ваше ім’я">
+                        <input type="tel" name="tel" placeholder="телефон" id="popup-margin">
                     </div>
                     <button type="submit" class="popup-button">
                         <p>Надіслати</p>
@@ -27,8 +27,15 @@
             </div>
         </section>
         <div class="header_blue">
-            <div class="wrapper items_center space_between">
-                <ul class="menu1 space_between">
+            <div class="wrapper burger-flex">
+                <div id="burger">
+                    <svg width="40" height="30" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="8" x2="40" y2="8" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                        <line x1="0" y1="18" x2="40" y2="18" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                        <line x1="0" y1="28" x2="40" y2="28" stroke="#fff" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <ul class="menu1 space_between" id="menu1">
                     <li class="menu1_list li-height">
                         <a href="index.html" class="menu1_link">Головна</a>
                     </li>
@@ -50,10 +57,18 @@
                             <li class="header-last-ulinul">
                                 <a href="#">Собачі будки</a>
                                 <ul class="ulinulinul">
-                                    <li><a href="">Елітні будки</a></li>
-                                    <li><a href="">Для чіхуахуа</a></li>
-                                    <li><a href="">Вольєри</a></li>
-                                    <li><a href="">Халабуди</a></li>
+                                    <li>
+                                        <a href="">Елітні будки</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Для чіхуахуа</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Вольєри</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Халабуди</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -64,6 +79,7 @@
                     <li class="menu1_list li-height">
                         <a href="contacts.html" class="menu1_link">Контакти</a>
                     </li>
+                    <li id="burgercancel">x</li>
                 </ul>
                 <ul class="svgs">
                     <li class="svgs_list">
@@ -136,8 +152,15 @@
                     <a href=# class="skype_link">hataplus</a>
                 </div>
             </div>
-            <a href="#" class="signup-btn" id="popupopen">
+            <a href="javascript:void(0)" class="signup-btn" id="popupopen">
                 Замовити дзвінок
+            </a>
+        </div>
+        <div class="offer">
+            <p class="offer-p1">Пропозиція місяця</p>
+            <p class="offer-p2">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
+            <a href="#">
+                <b class="offer-b1">5999</b><b class="offer-b2">грн / м²</b>
             </a>
         </div>
     </header>
@@ -190,8 +213,8 @@
         </div>
         <section class="wrapper" id="contacts-iframes">
             <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/d/embed?mid=13Cyqeya1qnJsGyXdegm3o1bF_9_j2Ro&ehbc=2E312F"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1qYzIOnmcCMRW4v6NgEvY-xePdNDOl8A&ehbc=2E312F"
+                    width="640" height="480"></iframe>
             </div>
             <div class="contacts-iframes">
                 <h2>Форма зворотнього зв’язку</h2>
@@ -206,15 +229,18 @@
                     </div>
                     <input type="text" placeholder="Тема повідомлення" name="contactsmessage" class="iframes"
                         id="contactsmessage">
-                    <textarea placeholder="текст" name="contactstext" id="contactstext"></textarea>
+                    <div id="textarea"><textarea placeholder="Tекст" name="contactstext" id="contactstext"></textarea>
+                    </div>
                     <div class="flex">
-                            <button type="submit" class="popup-button" id="contacts-button">
-                                <p>Відправити</p>
-                            </button>
-                        <div class="flex">
-                            <div id="galochka"><input type="checkbox" name="galochka" value="news"></div>
+                        <button type="submit" class="popup-button" id="contacts-button">
+                            <p>Відправити</p>
+                        </button>
+                        <label class="flex">
+                            <div id="galochka">
+                                <input type="checkbox" name="galochka" value="news" id="checkbox">
+                            </div>
                             <p class="class">Я бажаю отримувати останні новини</p>
-                        </div>
+                        </label>
                     </div>
                 </form>
             </div>
