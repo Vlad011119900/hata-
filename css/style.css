@@ -732,7 +732,7 @@ td a {
 
 .table-adaptive {
     overflow-x: auto;
-    max-width: 369rem;
+    max-width: 90vw;
 }
 
 .main-text-table {
