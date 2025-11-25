@@ -47,7 +47,7 @@ body a {
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 0 10rem;
     max-width: 960rem;
 }
 
@@ -56,15 +56,23 @@ body a {
     gap: 10rem;
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
 }
 
+.space_between-contacts {
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+}
 
 .space_between {
     display: flex;
     justify-content: space-between;
+}
+
+.space_between-header {
+    display: block;
 }
 
 .flex {
@@ -82,11 +90,12 @@ body a {
 }
 
 .menu1 {
-    position: absolute;
+    position: fixed;
     background-color: #1f1f56;
     top: 0;
     left: -100%;
     z-index: 2;
+    min-height: 100vh;
     transition: all .5s ease;
 }
 
@@ -667,7 +676,7 @@ main {
 .table {
     overflow: hidden;
     border-radius: 3rem;
-    min-width: 960rem;
+    min-width: 940rem;
     width: 100%;
 }
 
@@ -732,7 +741,7 @@ td a {
 
 .table-adaptive {
     overflow-x: auto;
-    max-width: 90vw;
+    max-width: 95vw;
 }
 
 .main-text-table {
@@ -906,7 +915,6 @@ figcaption a:hover~picture>img {
 
 aside {
     width: 100%;
-    max-width: 220rem;
 }
 
 aside p {
@@ -948,8 +956,7 @@ aside p {
     content: "";
     position: absolute;
     top: 50%;
-    left: 195rem;
-    right: 12rem;
+    right: 15rem;
     display: block;
     width: 8rem;
     height: 8rem;
@@ -1064,6 +1071,7 @@ footer {
         position: static;
         display: flex;
         flex-direction: row;
+        min-height: 55rem;
         justify-content: space-between;
         column-gap: 10px;
     }
@@ -1083,6 +1091,43 @@ footer {
     }
 }
 
+
+@media screen and (min-width: 530px) {
+    html {
+        font-size: .8px;
+    }
+
+    .table-projects-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+    }
+
+    .foter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+    }
+
+    .space_between-contacts {
+        display: grid;
+        gap: 10rem;
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media screen and (min-width: 590px) {
+    html {
+        font-size: .8px;
+    }
+
+    .projects-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
@@ -1095,12 +1140,6 @@ footer {
         background-color: #dcdce6;
     }
 
-    .projects-flex {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
     .foter {
         display: flex;
         flex-direction: row;
@@ -1111,19 +1150,41 @@ footer {
         display: block;
     }
 
-    .table-projects-flex {
+    .center {
         display: flex;
-        flex-wrap: wrap;
-        gap: 20rem;
     }
 
-    .center{
-        display: flex;
-    }
-    
     .table-adaptive {
         overflow-x: auto;
         max-width: 767rem;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    html {
+        font-size: .9px;
+    }
+
+    .table-projects-flex {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .headerwhigt {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        gap: 20rem;
+        padding: 32rem 0 29rem;
+    }
+
+    .space_between-contacts {
+        display: grid;
+        gap: 15rem;
+        grid-template-columns: repeat(3, 1fr)
     }
 }
 
@@ -1137,18 +1198,17 @@ footer {
         min-width: 240rem;
     }
 
-    .main {
-        display: flex;
-        gap: 20rem;
+
+    .table-adaptive {
+        overflow-x: visible;
+        max-width: none;
     }
 
-    .headerwhigt {
+    .table-projects-flex {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
-        align-items: center;
         gap: 20rem;
-        padding: 32rem 0 29rem;
     }
 
     #aside-section {
@@ -1159,17 +1219,14 @@ footer {
         display: block;
     }
 
-    .table-adaptive {
-        overflow-x: none;
-        max-width: 100%;
+    .main {
+        display: flex;
+        gap: 20rem;
     }
 
-
-    .table-projects-flex {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        gap: 20rem;
+    .table-adaptive {
+        overflow-x: auto;
+        max-width: none;
     }
 }
 
