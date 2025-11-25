@@ -144,13 +144,17 @@ body a {
 }
 
 textarea {
-    width: 466rem;
+    width: 94vw;
     height: 105rem;
     max-width: 466rem;
     max-height: 105rem;
     margin-bottom: 13rem;
     padding: 10px;
     font-style: italic;
+}
+
+#contacts-margin-bottom{
+    margin-bottom: 30rem;
 }
 
 .column-contacts {
@@ -478,7 +482,7 @@ a:hover>svg path {
 }
 
 .li-height {
-    padding: 18rem 0 18rem 0;
+    padding: 18rem 10rem;
 }
 
 .header-last-ulinul::before {
@@ -1048,6 +1052,11 @@ footer {
     gap: 20rem;
 }
 
+.contacts-main-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .footer-gray {
     padding: 16rem;
@@ -1082,6 +1091,10 @@ footer {
 
     .cancel {
         display: none;
+    }
+
+    .li-height {
+        padding: 18rem 0;
     }
 }
 
@@ -1133,6 +1146,12 @@ footer {
         font-size: .9px;
     }
 
+    .contacts-main-grid{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
     .driver {
         display: block;
         margin: 33rem 0;
@@ -1151,7 +1170,7 @@ footer {
     }
 
     .center {
-        display: flex;
+        display: block;
     }
 
     .table-adaptive {
