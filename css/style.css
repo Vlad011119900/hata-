@@ -1,6 +1,10 @@
 html {
-    overflow: hidden;
     font-size: 1px;
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -1162,6 +1166,11 @@ footer {
         font-size: .8px;
     }
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .map iframe {
         position: absolute;
         left: -1px;
@@ -1173,9 +1182,6 @@ footer {
 }
 
 @media screen and (min-width: 530px) {
-    html {
-        font-size: .8px;
-    }
 
     .headerwhigt {
         display: grid;
@@ -1206,9 +1212,6 @@ footer {
 }
 
 @media screen and (min-width: 590px) {
-    html {
-        font-size: .8px;
-    }
 
     .projects-flex {
         display: flex;
@@ -1220,6 +1223,11 @@ footer {
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
     }
 
     .map iframe {
@@ -1266,10 +1274,6 @@ footer {
 
 
 @media screen and (min-width: 900px) {
-    html {
-        font-size: .9px;
-    }
-
     .table-projects-flex {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -1297,6 +1301,11 @@ footer {
 @media screen and (min-width: 1024px) {
     html {
         font-size: 1px;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
     }
 
     .map iframe {
@@ -1348,11 +1357,21 @@ footer {
     html {
         font-size: 1.1px;
     }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (min-width: 1920px) {
     html {
         font-size: 1.5px;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
     }
 
     .img-4k {
@@ -1367,5 +1386,10 @@ footer {
 @media screen and (min-width: 2200px) {
     html {
         font-size: 1.7px;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
     }
 }
